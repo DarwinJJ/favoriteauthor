@@ -1,0 +1,13 @@
+<div>
+  <p><a [routerLink]="['/home']">Home</a></p>
+  <div class='main'>
+    <p>Edit this author: </p>
+    <div class='displ'>
+      <form (submit)="updateAuthor()">
+        <p class=''> Name: <input type='text' name="reqAuth.name" [(ngModel)]="reqAuth.name" value='{{ reqAuth.name }}'></p>
+        <input type='submit' class='btn inline' [routerLink]="['/home']" value='Cancel' />
+        <input type='submit' class='btn inline' value='Submit' />
+      </form> 
+    </div>
+  </div>
+</div>

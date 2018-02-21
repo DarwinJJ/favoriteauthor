@@ -1,0 +1,10 @@
+.displ {
+    border: 1px solid blue;
+    width: 500px;
+    padding: 20px;
+}
+.btn {
+    width: 100px;
+    height: 25px;
+    background-color: white;
+}

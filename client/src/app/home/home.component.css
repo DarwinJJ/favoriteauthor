@@ -1,0 +1,28 @@
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+.field {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+.col1 {
+    width: 150px;
+}
+p{
+    margin: 5px;
+}
+.col2 {
+    width: 300px;
+}
+.row {
+    padding: 5px;
+}
+.header {
+    padding: 5px;
+    background-color: aliceblue;
+}
+.showAuthors {
+    width: 500px;
+}

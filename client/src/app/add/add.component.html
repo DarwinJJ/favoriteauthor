@@ -1,0 +1,13 @@
+<div>
+  <p><a [routerLink]="['/home']">Home</a></p>
+  <div class='main'>
+    <p>Add a new author: </p>
+    <div>
+      <form (submit)="createAuthor()"></form>
+      <p class=''> Name: </p>
+      <p class=''><input type='text' name="newAuth.name" [(ngModel)]="newAuth.name"></p>
+      <input type='submit' class='btn inline' [routerLink]="['/home']" value='Cancel' />
+      <input type='submit' class='btn inline' value='Submit' />
+    </div>
+  </div>
+</div>

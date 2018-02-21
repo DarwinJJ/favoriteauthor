@@ -1,0 +1,17 @@
+<div>
+  <p><a [routerLink]="['/new']">Add an author</a></p>
+  <div *ngIf="authors.length !=0" class='showAuthors'>
+    <p>We have quotes by: </p>
+    <div class='header'>
+      <p class='col1 inline'> Author </p>
+      <p class='col2 inline'>Actions available</p>
+    </div>
+    <div *ngFor="let author of authors" class='row'>
+      <p class='field'>{{ author.name }} </p>
+      <p class='col2 inline'>  
+        <button class='inline btn' [routerLink]="['/edit', author._id]" value="{{ author._id }}" class='btn'>Edit</button>
+        <button class='inline btn' (click)='deleteAuthor($event)' value="{{ author._id }}" name='id'>Delete</button>
+      </p>
+    </div>
+  </div>
+</div>
